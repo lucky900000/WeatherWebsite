@@ -1,4 +1,4 @@
-console.log("welcome to js file in js folder in public folder");
+console.log("welcome to js file in js folder ");
 
 // function settimefn(callback) {
 //   setTimeout(() => {
