@@ -1,5 +1,6 @@
 console.log(__dirname);
 console.log(__filename);
+const port = process.env.PORT || 4000;
 const weatherapp = require("./utils/allfunctions.js");
 const path = require("path");
 const htmlpath = path.join(__dirname, "../public");
@@ -81,7 +82,7 @@ app.get("/help/*", function (req, res) {
     errormsg: "Help article not found",
   });
 });
-app.listen(4000);
+app.listen(port);
 
 app.get("*", function (req, res) {
   res.render("error", {
