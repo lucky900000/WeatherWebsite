@@ -90,4 +90,4 @@ app.get("*", function (req, res) {
     errormsg: "Page not found",
   });
 });
-console.log(weatherapp.r);
+//console.log(weatherapp.r);
