@@ -42,7 +42,7 @@ button.addEventListener("click", function (e) {
 
   resultmsg2.textContent = "";
   fetch(
-    `http://localhost:4000/weather?city=${cityinput.value}&country=${countryinput.value}`
+    `/weather?city=${cityinput.value}&country=${countryinput.value}`
   ).then(function (response) {
     response.json().then((data) => {
       if (data.error) {
